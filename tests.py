@@ -22,7 +22,7 @@ class TestInit(unittest.TestCase):
 class TestStr(unittest.TestCase):
   def test_displayfraction(self):
     a = Fraction(1,2)
-    self.assertEquals(" 1/2 ",a.__str__())
+    self.assertEqual(" 1/2 ",a.__str__())
   def test_displayInt(self):
     pass
   def test_displayNeg(self):
