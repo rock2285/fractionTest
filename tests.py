@@ -2,7 +2,6 @@ from fraction import Fraction
 import unittest
 
 class TestInit(unittest.TestCase):
-  #you should inspect the data members of self here, don't use __str__
   #several of these will need to check to see if an exception is raised
   def test_divZero(self):
     with self.assertRaises(ZeroDivisionError,msg="Denominator of zero fails to raise DivByZero"):
