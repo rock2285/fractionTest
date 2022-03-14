@@ -6,8 +6,8 @@ class Fraction(object):
     #if both arguments are negative, signs cancel and self.numerator, self.denominator will both be positive
     #if denominator is negative and numerator is positive, move the sign to self.numerator; self.denominator
     #should always be positive.
-    self.n = numerator
-    self.d = denominator
+    self.numerator = numerator
+    self.denominator = denominator
   def __str__(self):
     #precondition: self is valid
     #postcondition: return "<self.numerator>/<self.denominator>" unless the denominator is 1, then return
