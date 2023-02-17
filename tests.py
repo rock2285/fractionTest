@@ -7,26 +7,22 @@ class TestInit(unittest.TestCase):
     with self.assertRaises(ZeroDivisionError,msg="Denominator of zero fails to raise DivByZero"):
       a = Fraction(1,0)
   def test_default(self):
-    pass
+    pass #will the 0 argument version of the constructor produce the correct fraction?
   def test_oneArg(self):
-    pass
+    pass #will the 1 argument version of the constructor produce the correct fraction?
   def test_twoArg(self):
-    pass
-  def test_threeArg(self):
-    pass
+    pass #will the 2 argument version of the constructor produce the correct fraction?
   def test_invalidArg(self):
-    pass
-  def test_negDenom(self):
-    pass
+    pass #will constructor through an exception if non-numeric data is passed?
   def test_reduced(self):
-    pass
+    pass #if the inputs share a factor, is the fraction reduced? i.e. 2/4 = 1/2
 
 class TestStr(unittest.TestCase):
   def test_displayfraction(self):
     a = Fraction(1,2)
     self.assertEqual(" 1/2 ",a.__str__())
   def test_displayInt(self):
-    pass
+    pass #if the denominator is 1, does display omit the /1?
   def test_displayNeg(self):
-    pass
+    pass #if the fraction is negative, is it possible to erroneously have it display 1/-2, vs -1/2?
     
