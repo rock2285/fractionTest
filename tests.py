@@ -1,7 +1,7 @@
 from fraction import Fraction
 import unittest
 
-class TestInit(unittest.TestCase):
+class Test_Init(unittest.TestCase):
   #several of these will need to check to see if an exception is raised
   def test_divZero(self):
     with self.assertRaises(ZeroDivisionError,msg="Denominator of zero fails to raise DivByZero"):
@@ -17,7 +17,7 @@ class TestInit(unittest.TestCase):
   def test_reduced(self):
     pass #if the inputs share a factor, is the fraction reduced? i.e. 2/4 = 1/2
 
-class TestStr(unittest.TestCase):
+class Test_Str(unittest.TestCase):
   def test_displayfraction(self):
     a = Fraction(1,2)
     self.assertEqual(" 1/2 ",a.__str__())
