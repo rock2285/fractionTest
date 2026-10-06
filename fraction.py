@@ -21,16 +21,6 @@ class Fraction(object):
     Exceptions: none.
     """
 
-  def __repr__(self):
-    """Return an unambiguous representation of this fraction.
-
-    Preconditions: this instance represents a valid fraction.
-    Postconditions: returns a representation that identifies the numerator and
-      denominator and can be used to reconstruct an equivalent fraction.
-    Side effects: none.
-    Exceptions: none.
-    """
-
   def __float__(self):
     """Convert this fraction to a floating-point number.
 
@@ -45,15 +35,6 @@ class Fraction(object):
 
     Preconditions: this instance represents a valid fraction.
     Postconditions: returns the quotient truncated toward zero.
-    Side effects: none.
-    Exceptions: none.
-    """
-
-  def __bool__(self):
-    """Report whether this fraction is nonzero.
-
-    Preconditions: this instance represents a valid fraction.
-    Postconditions: returns False exactly when the numerator is zero.
     Side effects: none.
     Exceptions: none.
     """
@@ -123,15 +104,7 @@ class Fraction(object):
     Exceptions: TypeError for unsupported operand types.
     """
 
-  def __radd__(self, other):
-    """Add this fraction to an integer or fraction on the left.
-
-    Preconditions: other is a fraction or integer.
-    Postconditions: returns the exact sum as a normalized fraction.
-    Side effects: does not modify either operand.
-    Exceptions: TypeError for unsupported operand types.
-    """
-
+  
   def __sub__(self, other):
     """Subtract another fraction or integer from this fraction.
 
@@ -141,28 +114,10 @@ class Fraction(object):
     Exceptions: TypeError for unsupported operand types.
     """
 
-  def __rsub__(self, other):
-    """Subtract this fraction from an integer or fraction on the left.
-
-    Preconditions: other is a fraction or integer.
-    Postconditions: returns the exact difference as a normalized fraction.
-    Side effects: does not modify either operand.
-    Exceptions: TypeError for unsupported operand types.
-    """
-
   def __mul__(self, other):
     """Multiply this fraction by another fraction or integer.
 
     Preconditions: this instance is valid; other is a fraction or integer.
-    Postconditions: returns the exact product as a normalized fraction.
-    Side effects: does not modify either operand.
-    Exceptions: TypeError for unsupported operand types.
-    """
-
-  def __rmul__(self, other):
-    """Multiply an integer or fraction on the left by this fraction.
-
-    Preconditions: other is a fraction or integer.
     Postconditions: returns the exact product as a normalized fraction.
     Side effects: does not modify either operand.
     Exceptions: TypeError for unsupported operand types.
@@ -178,39 +133,12 @@ class Fraction(object):
       other is zero.
     """
 
-  def __rtruediv__(self, other):
-    """Divide an integer or fraction on the left by this fraction.
-
-    Preconditions: this instance is nonzero; other is a fraction or integer.
-    Postconditions: returns the exact quotient as a normalized fraction.
-    Side effects: does not modify either operand.
-    Exceptions: TypeError for unsupported operand types; ZeroDivisionError if
-      this fraction is zero.
-    """
 
   def __neg__(self):
     """Return the additive inverse of this fraction.
 
     Preconditions: this instance represents a valid fraction.
     Postconditions: returns a normalized fraction whose sum with this value is zero.
-    Side effects: does not modify this instance.
-    Exceptions: none.
-    """
-
-  def __pos__(self):
-    """Return this fraction's positive value.
-
-    Preconditions: this instance represents a valid fraction.
-    Postconditions: returns a fraction equal to this value.
-    Side effects: does not modify this instance.
-    Exceptions: none.
-    """
-
-  def __abs__(self):
-    """Return the nonnegative absolute value of this fraction.
-
-    Preconditions: this instance represents a valid fraction.
-    Postconditions: returns a normalized fraction equal to the absolute value.
     Side effects: does not modify this instance.
     Exceptions: none.
     """
