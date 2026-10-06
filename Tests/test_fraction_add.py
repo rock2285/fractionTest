@@ -21,3 +21,7 @@ class TestFractionAdditions(unittest.TestCase)
       def test_unsupported_operand_type_raises_type_error(self):
             with self.assertRaises(TypeError):
                 Fraction(1, 2) + "not a fraction"
+
+
+if __name__ == "__main__":
+    unittest.main()
