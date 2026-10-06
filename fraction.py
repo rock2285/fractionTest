@@ -72,8 +72,8 @@ class Fraction(object):
     """Compare this fraction with another fraction for inequality.
 
     Preconditions: this instance represents a valid fraction.
-    Postconditions: returns the logical inverse of equality; unsupported operand
-      types compare unequal.
+    Postconditions: returns the logical inverse of equality, including True for
+      unsupported operand types.
     Side effects: none.
     Exceptions: none.
     """
