@@ -29,3 +29,6 @@ class TestFractionAddition(unittest.TestCase):
     def test_add_float_raises_type_error(self):
         with self.assertRaises(TypeError):
             Fraction(1, 2) + .5
+
+    def test_add_negative_fraction(self):
+        self.assertEqual(Fraction(1, 6), Fraction(1, 2) + Fraction(-1, 3))
